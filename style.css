@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin: 5rem auto;
+    height: 50rem;
+    background-image: linear-gradient(to bottom, #252627, #20252c, #1d2431, #1d2136, #201e39);
+}
+
+h1 {
+    font-size: 4rem;
+    color: #A09BE7;
+}
+
+/*Botões*/
+
+#buttons-container {
+    border: none;
+    padding: 2rem;
+}
+
+#two-players, #ai-player {
+    border: 2px;
+    border-radius: 4px;
+    background-color: #A09BE7;
+    padding: 1rem;
+    margin: 1rem;;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* jogo */
+#container {
+    display: flex;
+    width: 24rem;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
+}
+.box {
+    height: 8rem;
+    border: 5px solid #BFB7B6;
+    flex: 1 1 33%;
+}
+
+#block-1, #block-2, #block-3 {
+    border-top: none;
+}
+
+#block-1, #block-4, #block-7{
+    border-left: none;
+}
+
+#block-7, #block-8, #block-9{
+    border-bottom: none;
+}
+
+#block-3, #block-6, #block-9 {
+    border-right: none;
+}
+
+#scoreboard-container h2{
+    font-size: 2.5rem;
+    color: #A09BE7;
+    margin-top: 3rem;
+}
+
+.score-box {
+    margin: 1rem;
+}
+.x {
+    font-size: 8rem;
+    color: #DB4C40;
+    display: inline-block;
+    line-height: 6rem;
+}
+
+.o{
+    width: 5rem;
+    height: 5rem;
+    border: 8px solid #06D6A0;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 1.2rem;
+}
+
+/* classe de esconder */
+
+ .hide {
+    display: none !important;
+} 
+
+#scoreboard-container {
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+    margin: 2rem auto;
+}
+#x-scoreboard {
+    color: #DB4C40;
+}
+
+#player-o{
+    color: #06D6A0;
+
+}
+
+#o-scoreboard {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 4px solid #06D6A0;
+    border-radius: 50%;
+}
+
+#scoreboard-1, #scoreboard-2 {
+    color: #BFB7B6;
+}
+
+/* msg de vitória*/
+
+#message p {
+    position: absolute;
+    top: 28rem;
+    width: 50rem;
+    font-size: 3rem;
+    background-color: #bdbdbd;
+    border: 3px solid #350d57;
+    border-radius: 1rem;
+    color: #350d57;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+}
